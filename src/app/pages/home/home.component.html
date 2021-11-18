@@ -1,0 +1,14 @@
+<h1>Cartelera</h1>
+<!-- Vamos a enviar la informacion al componente hijo -->
+<div class="row" *ngIf="movies.length > 0">
+    <div class="col">
+        <app-slideshow [movies]="moviesSlideshow"></app-slideshow>
+    </div>
+</div>
+
+<h2 class="mt-5">Películas</h2>
+<div class="row" *ngIf="movies.length > 0">
+    <div class="col">
+        <app-peliculas-poster-grid [movies]="movies"></app-peliculas-poster-grid>
+    </div>
+</div>
